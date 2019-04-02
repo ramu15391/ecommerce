@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Link , Route, NavLink, Switch} from 'react-router-dom'
+import { letIntro } from './LetIntro'
 class Concepts extends React.Component{
     
     constructor(){
@@ -24,17 +25,17 @@ class Concepts extends React.Component{
     render()
     {
         const stateConcept= this.state.reactConcepts
-        const conceptStack = stateConcept.map((t) =>
-            <li>{t.topic}</li>
-            //console.log('conceptStack',t.topic)
+        const conceptStack = stateConcept.map((t, i) =>
+            <Link key={'topic'+i} to={t.topic}>{t.topic}</Link>
         )
-        const numbers = [1, 2, 3, 4, 5];
-        const listItems = numbers.map((number) =>
-        <li>{number}</li>
-        );
-        console.log('conceptStack',conceptStack)
         return(
-            <ul>{conceptStack}</ul>
+            <React.Fragment>
+            <div>
+                <Route path='/let' component={letIntro}/>
+                <ul>{conceptStack}</ul>
+            </div>
+                
+            </React.Fragment>
         )
     }
 }

@@ -1,7 +1,8 @@
 import React from 'react'
 import {HeaderElement, MainWrapper, MainSection} from './styled'
 import { Concepts } from './Concepts'
-
+import { Link , Route, NavLink, Switch} from 'react-router-dom'
+import { letIntro } from './LetIntro';
 class Homepage extends React.Component{
     render(){
         return(
@@ -12,6 +13,7 @@ class Homepage extends React.Component{
                     <Concepts></Concepts>
                 </MainWrapper>
             </MainSection>
+            <Route path='/let' component={letIntro}/>
             </React.Fragment>
         )
     }
