@@ -11,6 +11,7 @@ class Homepage extends React.Component{
                 <HeaderElement>Known Concepts</HeaderElement>
                 <MainWrapper>
                     <Concepts></Concepts>
+                    <Details></Details>
                 </MainWrapper>
             </MainSection>
             <Route path='/let' component={letIntro}/>
