@@ -13,8 +13,8 @@ class Homepage extends React.Component{
             <MainSection>
                 <HeaderElement>Known Concepts</HeaderElement>
                 <MainWrapper>
-                
                     <Concepts {...this.props}/>
+                    <Details></Details>
                 </MainWrapper>
             </MainSection>
             </React.Fragment>
