@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link , Route, NavLink, Switch} from 'react-router-dom'
 import { letIntro } from './LetIntro'
+import {SwitchRoute} from '../routes/route'
 class Concepts extends React.Component{
     
     constructor(){
@@ -31,8 +32,8 @@ class Concepts extends React.Component{
         return(
             <React.Fragment>
             <div>
-                <Route path='/let' component={letIntro}/>
                 <ul>{conceptStack}</ul>
+                <SwitchRoute {...this.props}/>
             </div>
                 
             </React.Fragment>
