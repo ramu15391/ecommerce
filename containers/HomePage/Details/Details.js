@@ -1,15 +1,15 @@
 import React from 'react'
-import {sectionElement, containerElement, headerElement} from './styledDetails'
+import {SectionElement, ContainerElement, HeaderElement} from './styledDetails'
 
 class Details extends React.Component{
     render(){
         return(
-            <sectionElement>
-                <headerElement></headerElement>
-                <containerElement>
+            <SectionElement>
+                <HeaderElement></HeaderElement>
+                <ContainerElement>
                     <div>Contnen</div>
-                </containerElement>
-            </sectionElement>
+                </ContainerElement>
+            </SectionElement>
         )
     }
 }

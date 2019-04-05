@@ -28,15 +28,15 @@ const routingList = [
 class SwitchRoute extends React.Component{
     render()
     {
-        console.log(location.pathname)
+        console.log('******', location.pathname)
         console.log(this.props)
-        const currentRoute = routingList.map((route) =>
-            (route.path == location.pathname) ? <Route path={path} component={route.component}/> :''
+        const currentRoute = routingList.map((route,i) =>
+           <Route key={i} path={route.path} component={route.component}/>
         )
         console.log('route',currentRoute)
         return(
                 <div>
-                    {currentRoute}<span>test</span>
+                    {currentRoute}
                 </div>
         )
     }

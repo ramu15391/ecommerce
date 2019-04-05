@@ -1,20 +1,20 @@
 import styled from 'styled-components'
 
-const sectionElement = styled.section`
+const SectionElement = styled.section`
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 `
-const headerElement = styled.header`
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-`
-
-const containerElement = styled.div`
+const HeaderElement = styled.header`
     display: flex;
     width: 100%;
     flex-wrap: wrap;
 `
 
-export {sectionElement, containerElement, headerElement}
+const ContainerElement = styled.div`
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+`
+
+export { SectionElement, HeaderElement, ContainerElement }

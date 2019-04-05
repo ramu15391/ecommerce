@@ -3,9 +3,10 @@ import { Homepage } from './containers/Homepage/homePage'
 import { BrowserRouter } from 'react-router-dom';
 class APP extends React.Component{
     render(){
+        console.log('app', this.props)
         return(
             <BrowserRouter>
-                <Homepage></Homepage>
+                <Homepage {...this.props}></Homepage>
             </BrowserRouter> 
         )
     }

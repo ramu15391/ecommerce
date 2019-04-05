@@ -33,7 +33,7 @@ class Concepts extends React.Component{
             <React.Fragment>
             <div>
                 <ul>{conceptStack}</ul>
-                <SwitchRoute {...this.props}/>
+                {SwitchRoute}
             </div>
                 
             </React.Fragment>

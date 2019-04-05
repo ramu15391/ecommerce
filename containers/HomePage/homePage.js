@@ -4,7 +4,7 @@ import { Concepts } from './Concepts'
 import { Link , Route, NavLink, Switch} from 'react-router-dom'
 import { letIntro } from './LetIntro';
 import {SwitchRoute} from '../routes/route'
-
+import {Details} from './Details/Details'
 class Homepage extends React.Component{
     render(){
         console.log('home', this.props)
