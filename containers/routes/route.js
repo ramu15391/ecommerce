@@ -1,7 +1,7 @@
 import React from 'react'
-import { letIntro } from "../HomePage/LetIntro";
+import { letIntro, constIntro } from "../Concepts/conceptJson";
 import {Route, Switch} from 'react-router-dom'
-
+import {Details} from '../ConceptDetails/Details'
 const routingList = [
     {
         component: letIntro,
@@ -9,9 +9,9 @@ const routingList = [
         path:'/let'
     },
     {
-        component: letIntro,
+        component: constIntro,
         exact: true,
-        path:'/l'
+        path:'/const'
     },
     {
         component: letIntro,
@@ -35,9 +35,7 @@ class SwitchRoute extends React.Component{
         )
         console.log('route',currentRoute)
         return(
-                <div>
-                    {currentRoute}
-                </div>
+                <Details currentRoute= {currentRoute}/>
         )
     }
 }

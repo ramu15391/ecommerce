@@ -15,21 +15,4 @@ const HeaderElement = styled.header.attrs({
     padding: 1rem;
 `
 
-const MainWrapper = styled.main`
-    display: flex;
-    flex: 0 0 100%;
-    background: lightblue;
-    flex-wrap: wrap;
-
-    a {
-        flex: 0 0 50%;
-    }
-
-    ul {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-`
-
-export { HeaderElement, MainWrapper, MainSection}
+export { HeaderElement, MainSection}

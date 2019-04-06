@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link , Route, NavLink, Switch} from 'react-router-dom'
-import { letIntro } from './LetIntro'
-import {SwitchRoute} from '../routes/route'
+import {MainSection} from './styled'
 class Concepts extends React.Component{
     
     constructor(){
@@ -30,13 +29,9 @@ class Concepts extends React.Component{
             <Link key={'topic'+i} to={t.topic}>{t.topic}</Link>
         )
         return(
-            <React.Fragment>
-            <div>
+            <MainSection>
                 <ul>{conceptStack}</ul>
-                {SwitchRoute}
-            </div>
-                
-            </React.Fragment>
+            </MainSection>
         )
     }
 }
