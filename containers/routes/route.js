@@ -1,7 +1,7 @@
 import React from 'react'
-import { letIntro, constIntro } from "../Concepts/conceptJson";
+import { letIntro, constIntro } from "../ConceptsList/conceptJson";
 import {Route, Switch} from 'react-router-dom'
-import {Details} from '../ConceptDetails/Details'
+import {Details} from '../ConceptDetailsPage/Details'
 const routingList = [
     {
         component: letIntro,

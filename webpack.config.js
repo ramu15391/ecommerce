@@ -6,7 +6,16 @@ var config = {
 	},
 	devServer: {
 		inline: false,
-		port: 8888
+		port: 8888,
+		historyApiFallback:true,
+		proxy: {
+			'/orchestrationservices/**': {
+				target: 'https://adidasapi.skavacommerce.com/',
+				changeOrigin: true,
+				pathRewrite: { '^/orchestrationservices': '' },
+                secure: false
+            }
+        }
 	},
 	module: {
 		rules: [
