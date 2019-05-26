@@ -9,10 +9,8 @@ var config = {
 		port: 8888,
 		historyApiFallback:true,
 		proxy: {
-			'/orchestrationservices/**': {
-				target: 'https://adidasapi.skavacommerce.com/',
-				changeOrigin: true,
-				pathRewrite: { '^/orchestrationservices': '' },
+			'/orchestrationservices': {
+                target: 'https://adidasapi.skavacommerce.com',
                 secure: false
             }
         }

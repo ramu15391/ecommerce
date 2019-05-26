@@ -3,7 +3,7 @@ import {HeaderElement, MainWrapper, MainSection} from './styled'
 import { Concepts } from '../ConceptsList/ConceptsList'
 import { Link , Route, NavLink, Switch} from 'react-router-dom'
 import {Details} from '../ConceptDetailsPage/Details'
-import {SwitchRoute} from '../routes/route'
+import {SwitchRoute} from '../../routes/route'
 class Homepage extends React.Component{
     render(){
         console.log('home', this.props)

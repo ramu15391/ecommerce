@@ -1,7 +1,7 @@
 import React from 'react'
-import { letIntro, constIntro } from "../ConceptsList/conceptJson";
+import { letIntro, constIntro } from "../page/ConceptsList/conceptJson";
 import {Route, Switch} from 'react-router-dom'
-import {Details} from '../ConceptDetailsPage/Details'
+import {Details} from '../page/ConceptDetailsPage/Details'
 const routingList = [
     {
         component: letIntro,
@@ -22,7 +22,13 @@ const routingList = [
         component: letIntro,
         exact: true,
         path:'/l'
+    },
+    {
+        component: ssr,
+        exact: true,
+        path:'/ssr'
     }
+
 ]
 
 class SwitchRoute extends React.Component{

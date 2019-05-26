@@ -1,6 +1,6 @@
 import React from 'react'
 import {SectionElement, ContainerElement, HeaderElement} from './styledDetails'
-import {SwitchRoute} from '../routes/route'
+import {SwitchRoute} from '../../routes/route'
 class Details extends React.Component{
     render(){
         const routeEl = this.props.currentRoute;
