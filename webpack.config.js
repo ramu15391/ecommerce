@@ -10,7 +10,7 @@ var config = {
 		historyApiFallback:true,
 		proxy: {
 			'/orchestrationservices': {
-                target: 'https://adidasapi.skavacommerce.com',
+				target: 'https://adidasapi.skavacommerce.com/',
                 secure: false
             }
         }
