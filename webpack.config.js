@@ -21,9 +21,9 @@ var config = {
 				test: /\.jsx?$/,
 				exclude: /node_modules/,
 				loader: 'babel-loader',
-				query: {
-					presets: ["@babel/preset-react", "@babel/preset-env"],
-				}
+				// query: {
+				// 	presets: ["@babel/preset-react", "@babel/preset-env"],
+				// }
 			},
 			{
 				test: /\.css$/,
