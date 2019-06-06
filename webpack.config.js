@@ -21,10 +21,9 @@ var config = {
 				test: /\.jsx?$/,
 				exclude: /node_modules/,
 				loader: 'babel-loader',
-				// query: {
-				// 	plugins: ['transform-decorators-legacy','transform-class-properties' ],
-				// 	//presets: ['env', 'react'],
-				// }
+				query: {
+					presets: ["@babel/preset-react", "@babel/preset-env"],
+				}
 			},
 			{
 				test: /\.css$/,
