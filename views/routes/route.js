@@ -52,7 +52,7 @@ var routingList = [{
 }, {
   component: '',
   exact: true,
-  path: '/ssr'
+  path: ''
 }];
 
 var SwitchRoute =

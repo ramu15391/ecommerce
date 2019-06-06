@@ -24,7 +24,7 @@ const routingList = [
         path:'/l'
     },
     {
-        component: ssr,
+        component: letIntro,
         exact: true,
         path:'/ssr'
     }
